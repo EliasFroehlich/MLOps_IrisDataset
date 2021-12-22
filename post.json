@@ -1,0 +1,8 @@
+curl --location --request POST 'http://localhost:5000/predict' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "SepalLength": 2.9,
+    "SepalWidth": 4,
+    "PetalLength": 4.5,
+    "PetalWidth": 2.5
+}'
