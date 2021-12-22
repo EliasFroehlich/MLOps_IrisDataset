@@ -4,7 +4,15 @@
 Desafio da área de Machine Learning com o dataset Iris.
 Este é um dataset clássico para classificação de plantas.
 
-Nesta aplicação, realizou-se a identificação dos dados, divisão em dados de treino e teste, avaliou-se diferentes algoritmos de Machine Learning, e foi selecionado aquele com melhor acurácia.
+Este repositório pode ser dividido em duas entregas:
+1. Avaliação dos dados e treinamento do modelo de classificação e testes, ao qual utilizei o Jupyter Notebook para tal. Este arquivo é o "Desafio_VF". Os comentários estão no arquivo de treinamento.
+2. Disponibilizar a API REST em uma imagem Docker para que possa ser testada localmente.
 
+
+## Teste da API com o Docker
+Por não ter experiência na criação de imagem Docker, não consegui disponibilizar a mesma para acessar externamente. Na execução do docker run image, acusou erro de que a pasta raíz não estava sendo encontrada. O ID da imagem gerado foi o 11ebea5dab98.
+Dado o tempo para entrega do desafio, não consegui estudar o suficiente para passar por este problema.
+Para o desenvolvimento do Docker, foram utilizados os arquivos "docker-compose.yml", 
+uvicorn --host 0.0.0.0 --port 8000 app.main:app
 
 ## 
